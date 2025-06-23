@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>SATHWIK PORTFOLIO</title>
+        <link rel="icon" href="sathwik.jpg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Iam storing all website in one div -->
+         <div class="website">
+            <!-- header code  -->
+            <div class="header">
+                <!-- logoside code -->
+                <div class="logoside">
+                    <!-- naa name -->
+                    <h1 class="name">SATHWIK</h1>
+                </div>
+                <!-- menubar code -->
+                <div class="menu">
+                    <ul>
+  <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+  <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+  <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+
+</ul>
+
+                </div>
+                <!-- dark mode toggle -->
+<button class="toggle-btn" onclick="toggleTheme()">
+  <i class="fas fa-moon"></i>
+</button>
+
+            </div>
+            <!-- content code  -->
+            <div class="content">
+                <!-- below is home section code  -->
+                <section id="home" class="home" class="home fade-in">
+                    <h2>Hi, I'm Sathwik</h2>
+                    <img src="/images/sathwik.jpg" alt="Sathwik Profile" class="profile-pic">
+
+                    <h3><span class="typing"></span></h3>
+
+                    <a href="Sathwik Resume.pdf"  class="resume-btn" download>Download Resume</a>
+
+                    <p class="p">
+                        I'm a passionate developer currently learning web development.  
+                        I enjoy designing and building clean websites using HTML and CSS.  
+                        I'm focused on improving my skills and creating projects to showcase my work.
+                    </p>
+                </section>
+
+
+                <!-- below is Skills section code  -->
+                <section class="skills" id="skills" class="skills fade-in">
+                    <h2>Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                            <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                            <div class="skill"><i class="fab fa-python"></i> Python</div>
+                            <div class="skill"><i class="fas fa-coffee"></i> Java</div>
+                            <div class="skill"><i class="fas fa-database"></i> SQL</div>
+
+                    </div>
+                </section>
+
+                <!-- below is Projects section code  -->
+                <section class="projects" id="projects" class="projects fade-in">
+                    <h2>Projects</h2>
+                    <div class="projects-container">
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website built using HTML and CSS. It includes Home, Skills, and Projects sections.</p>
+    </div>
+
+    <!-- ✅ Add below this -->
+    <div class="project-card">
+  <img src="sathwik.jpg" alt="Project 1" class="project-img">
+  <h3>Portfolio Website</h3>
+  <p>A personal portfolio built with HTML and CSS showing my skills and projects.</p>
+  <div class="project-links">
+    <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+    <a href="https://yourportfolio.live" target="_blank">Live Demo</a>
+  </div>
+</div>
+
+
+    <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>A task manager app using JavaScript where users can add, delete, and check tasks.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Temperature Converter</h3>
+        <p>Converts temperatures between Celsius, Fahrenheit, and Kelvin using JavaScript.</p>
+    </div>
+</div>
+
+                </section>
+                <!-- Contact Section -->
+<section id="contact" class="contact" class="contact fade-in">
+    <h2>Contact Me</h2>
+    <p class="p">Feel free to reach out via email or through my social links below.</p>
+    <div class="contact-info">
+        <!-- Contact Form -->
+<form class="contact-form">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" rows="4" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+        <p><i class="fas fa-envelope"></i> sathwik@example.com</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+    </div>
+</section>
+
+
+            </div>
+            <!-- footer code -->
+            <div class="footer">
+  <p>© 2025 Sathwik. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="https://github.com/psathwik-AIML" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/sathwikputtala/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</div>
+
+
+         </div>
+         <!-- Scroll to Top Button -->
+<a href="#home" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+    </body>
+    <script>
+  // Show scroll-to-top button when scrolling down
+  const scrollBtn = document.querySelector('.scroll-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = 'block';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  });
+</script>
+
+    <script>
+  function toggleTheme() {
+    document.body.classList.toggle("light-theme");
+    const icon = document.querySelector(".toggle-btn i");
+    icon.classList.toggle("fa-moon");
+    icon.classList.toggle("fa-sun");
+  }
+</script>
+<script>
+  const sections = document.querySelectorAll('.fade-in');
+
+  const options = {
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+<script>
+  const text = "Aspiring Web Developer";
+  const typingElement = document.querySelector(".typing");
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      typingElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeText, 100);
+    }
+  }
+
+  typeText();
+</script>
+
+</html>
