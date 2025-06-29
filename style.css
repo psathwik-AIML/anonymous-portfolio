@@ -1,0 +1,457 @@
+body{
+    background-color:black;
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+}
+/*used for smooth scrolling when clicked on link*/
+html {
+  scroll-behavior:smooth;
+}
+/* code for first letter in name  */
+/* code for complete header of website */
+.name {
+  font-weight: bold;
+  animation: slideIn 1.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header{
+    display: flex;
+    flex-wrap:wrap;
+    margin:0;
+    align-items: center;
+    justify-content: space-between;
+    height:100px;
+    padding:0 30px;
+}
+/* left side name code in header */
+.name {
+    color: white;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* right side in header menubar code */
+.menu ul{
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    gap:30px;
+    position:relative;
+    font-size:1.1em;
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+    border-bottom:2px solid transparent;
+    transition: border-bottom 0.4s ease;
+}
+.menu a:hover{
+    border-bottom:2px solid orangered;
+}
+/* code for content of website starts */
+
+/* home section code  */
+.home {
+  text-align: center;
+  color: white;
+  padding: 80px 10%;
+}
+.home h2 {
+  font-size: 2.5em;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.home h3 {
+  font-size: 1.5em;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+/* home section para */
+.home .p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+/* My  photo in  home section */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+/* resume download button in home  */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: white;
+  color: orangered;
+}
+/* skills section code */
+.skills {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills h2 {
+  color: orangered;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #222;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: transform 0.3s ease;
+  border: 1px solid orangered;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background-color: orangered;
+}
+/* code for projects section */
+.projects {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  color: orangered;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  border: 1px solid orangered;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: orangered;
+}
+/* projects images code */
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+/* projects inside links code  */
+.project-links {
+  margin-top: 10px;
+}
+.project-links a {
+  color: white;
+  text-decoration: none;
+  background-color: orangered;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #ff5722;
+}
+/* code for contact section */
+.contact {
+   padding: 60px 10%;
+   text-align: center; 
+}
+
+.contact h2 {
+  color: orangered;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+/* contact form code in contact section  */
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* input and text area  box code in contact form  */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #111;
+  color: white;
+  outline: none;
+}
+/* send message button code in contact form  */
+.contact-form button {
+  background-color: orangered;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff5722;
+}
+/* code for footer in the website */
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: #111;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* code  for responsive to work clean in every device */
+@media (max-width: 768px) {
+  .header {
+     flex-direction: column; 
+     height: auto;
+     align-items: flex-start;
+     gap: 10px;
+     padding: 20px;
+  }
+  .toggle-btn{
+    position:absolute;
+    right:10%;
+    top:10%;
+  }
+  .menu ul {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home, .skills, .projects {
+    padding: 40px 10%;
+  }
+
+  .skills-container, .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .profile-pic {
+    width: 120px;
+  }
+
+  .resume-btn {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* side icons  for skills and menu items */
+.skill i, .menu i {
+  margin-right: 8px;
+}
+/* code for icons in contact form */
+.contact-info i {
+  margin-right: 10px;
+  color: orangered;
+}
+/* social icons in footer */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color:white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: orangered;
+}
+/* dark theme button code in header */
+.toggle-btn {
+  background:none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  color: goldenrod;
+}
+/* code for scroll arrow */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: orangered;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #ff5722;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.typing {
+  border-right: 2px solid orangered;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* light theme webiste code  click sun */
+body.light-theme {
+  background-color: #fefefe;
+  color: #1f2937;
+}
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+  background-color: #fff;
+  color: black; 
+}
+body.light-theme .typing,
+body.light-theme .home h3,
+body.light-theme .contact-info p {
+  color: #374151; 
+}
+
+body.light-theme .skills,
+body.light-theme .projects,
+body.light-theme .contact {
+  background-color: #f9fafb;
+}
+
+body.light-theme .name,
+body.light-theme .home h2,
+body.light-theme .skills h2,
+body.light-theme .projects h2 {
+  color: #c28800; 
+}
+
+body.light-theme .menu a,
+body.light-theme .toggle-btn {
+  color: #1f2937;
+}
+body.light-theme .home .p{
+  color:#374151;
+}
+body.light-theme .menu a:hover {
+  border-bottom: 2px solid #c28800;
+}
+body.light-theme .skill,
+body.light-theme .project-card {
+  background-color: #ffffff;
+  color: #1f2937;
+  border: 1px solid #c28800;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+body.light-theme .project-card:hover {
+  background-color: #fff5dc; 
+}
+body.light-theme .resume-btn {
+  background-color: #c28800;
+  color: white;
+}
+body.light-theme .resume-btn:hover {
+  background-color: white;
+  color: #c28800;
+  border: 1px solid #c28800;
+}
+body.light-theme .footer {
+  background-color: #f1f5f9;
+  color: #1f2937;
+}
+
+body.light-theme .social-icons a {
+  color: #1f2937;
+}
+
+body.light-theme .social-icons a:hover {
+  color: #c28800;
+}
+
+
+
+
+

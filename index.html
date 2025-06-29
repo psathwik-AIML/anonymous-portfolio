@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This meta tag makes the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title -->
+    <title>SATHWIK PORTFOLIO</title>
+    <!-- This will add a picture to the website tab (favicon) -->
+    <link rel="icon" href="images/sathwik.jpg">
+    <!-- External font and CSS  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!-- This will link html with css file(External css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Storing the entire website  inside one div -->
+    <div class="website">
+
+        <!-- Header section -->
+        <div class="header">
+
+            <!-- Logo/Name section -->
+            <div class="logoside">
+                <h1 class="name"><span id="first-letter">S</span>ATHWIK</h1>
+            </div>
+
+            <!-- Menu bar -->
+            <div class="menu">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Dark mode toggle button -->
+            <button class="toggle-btn" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </button>
+
+        </div>
+
+        <!-- Main content area -->
+        <div class="content">
+
+            <!-- Home Section -->
+            <section id="home"  class="home fade-in visible">
+                <h2>Hi, I'm Sathwik</h2>
+                <img src="/images/sathwik.jpg" alt="Sathwik Profile" class="profile-pic">
+                <h3><span class="typing"></span></h3>
+                <a href="Sathwik Resume.pdf" class="resume-btn" download>Download Resume</a>
+
+                <p class="p">
+                    I'm a passionate developer currently learning web development.  
+                    I enjoy designing and building clean websites using HTML and CSS.  
+                    I'm focused on improving my skills and creating projects to showcase my work.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills fade-in visible">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                    <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                    <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill"><i class="fas fa-coffee"></i> Java</div>
+                    <div class="skill"><i class="fas fa-database"></i> SQL</div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects fade-in visible">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                  <!-- project 1 -->
+                    <div class="project-card">
+                        <img src="images/sathwik.jpg" alt="Project 1" class="project-img">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio built with HTML and CSS showing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+                            <a href="https://github.com/psathwik-AIML/sathwik-portfolio" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                        <!-- project 2 -->
+                    <div class="project-card">
+                        <img src="sathwik.jpg" alt="Project " class="project-img">
+                        <h3>project 2</h3>
+                        <p>A personal portfolio built with HTML and CSS showing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+                            <a href="https://yourportfolio.live" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="project-card">
+                        <img src="sathwik.jpg" alt="Project 3" class="project-img">
+                        <h3>project 3</h3>
+                        <p>A personal portfolio built with HTML and CSS showing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+                            <a href="https://yourportfolio.live" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <!-- project 4 -->
+                    <div class="project-card">
+                        <img src="sathwik.jpg" alt="Project 4" class="project-img">
+                        <h3>project 4</h3>
+                        <p>A personal portfolio built with HTML and CSS showing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+                            <a href="https://yourportfolio.live" target="_blank">Live Demo</a>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact fade-in visible">
+                <h2>Contact Me</h2>
+                <p class="p">Feel free to reach out via email or through my social links below.</p>
+                <div class="contact-info">
+                    <!-- Contact Form -->
+                    <form class="contact-form">
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <textarea placeholder="Your Message" rows="4"  required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <p><i class="fas fa-envelope"></i> sathwikputtala31@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 96408 17616</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer code  -->
+        <div class="footer">
+            <p>© 2025 Sathwik. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/psathwik-AIML" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sathwikputtala/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+<!-- This will link html with java script file -->
+<script src="javascript.js"></script>
+</html>
